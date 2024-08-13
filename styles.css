@@ -1,0 +1,193 @@
+body {
+    font-family: 'Monospace', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(135deg, #757575, #ffffff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    font-size: 30px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 60px;
+    background: #4a90e2;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: calc(100% - 24px);
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+input[type="number"] {
+    width: calc(100% - 24px);
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    background: linear-gradient(135deg, #4a90e2, #357ABD);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #357ABD, #4a90e2);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#copyButton {
+    background: #4caf50; 
+}
+
+#copyButton:hover {
+    background: #45a049; 
+}
+
+#decryptButton {
+    background: linear-gradient(135deg, #e94e77, #d63384); 
+}
+
+#decryptButton:hover {
+    background: linear-gradient(135deg, #d63384, #e94e77); 
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    textarea, input[type="number"] {
+        width: calc(100% - 20px);
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 599px) {
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    textarea, input[type="number"] {
+        width: calc(100% - 16px);
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
