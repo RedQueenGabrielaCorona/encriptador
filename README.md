@@ -13,4 +13,4 @@ Este proyecto es un encriptador de textos que sustituye cada letra del abecedari
 1. **Clona el repositorio** (si aún no lo has hecho):
 
    ```bash
-   git clone https://github.com/tu-usuario/encriptador-textos.git
+   git clone https://github.com/RedQueenGabrielaCorona/encriptador.git
